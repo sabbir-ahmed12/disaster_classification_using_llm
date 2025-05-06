@@ -1,0 +1,16 @@
+Model,Method,F1 Score,Precision,Recall,Total Params,Trainable Params
+Bert,Standard Ft,0.8957,0.8996,0.8973,"109,486,854","109,486,854"
+Bert,Lora Ft,0.8227,0.8295,0.8390,"109,786,380","299,526"
+Bert,Prompt Tuning,0.1032,0.4000,0.2346,"109,502,214","15,360"
+Roberta,Standard Ft,0.8938,0.8964,0.8955,"124,650,246","124,650,246"
+Roberta,Lora Ft,0.8991,0.9032,0.9007,"125,540,364","890,118"
+Roberta,Prompt Tuning,0.0878,0.0557,0.2072,"124,665,606","15,360"
+Distilbert,Standard Ft,0.9054,0.9064,0.9058,"66,958,086","66,958,086"
+Distilbert,Lora Ft,0.8964,0.8978,0.8973,"67,700,748","742,662"
+Distilbert,Prompt Tuning,0.3410,0.2569,0.5068,"66,973,446","15,360"
+Ensemble,Majority Voting,0.5541,0.7069,0.6216,N/A,N/A
+Ensemble,Majority Voting (Std+LoRA),0.5708,0.7473,0.6113,N/A,N/A
+Ensemble,Weighted Voting,0.8435,0.8539,0.8510,N/A,N/A
+Ensemble,Stacked (Logistic Regression),0.9035,0.9045,0.9041,N/A,N/A
+Ensemble,Stacked (SVM),0.9075,0.9094,0.9075,N/A,N/A
+Ensemble,Stacked (Random Forest),0.9022,0.9054,0.9024,N/A,N/A
